@@ -9,6 +9,7 @@ import UIKit
 
 open class JellyAnimationView: UIView, CAAnimationDelegate {
   open func startAnimation() {
+    if isAnimating { return }
     isAnimating = true
     immediately = false
     startVerticalAnimation()
