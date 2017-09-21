@@ -1,0 +1,16 @@
+PODS:
+  - JellyAnimationView (0.1.0)
+
+DEPENDENCIES:
+  - JellyAnimationView (from `../`)
+
+EXTERNAL SOURCES:
+  JellyAnimationView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JellyAnimationView: 5d24695e8d52c5798b51ba027fdd03693d61e152
+
+PODFILE CHECKSUM: 15991a15cd26d8e385a35ca8550db5b57dc13e07
+
+COCOAPODS: 1.3.1
