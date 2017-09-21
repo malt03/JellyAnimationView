@@ -16,7 +16,7 @@ You can animate a view like jelly.
                        DESC
 
   s.homepage         = 'https://github.com/malt03/JellyAnimationView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots      = 'https://github.com/malt03/JellyAnimationView/blob/master/screenshot.gif?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Koji Murata' => 'malt.koji@gmail.com' }
   s.source           = { :git => 'https://github.com/malt03/JellyAnimationView.git', :tag => s.version.to_s }

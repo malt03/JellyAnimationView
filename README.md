@@ -1,23 +1,27 @@
 # JellyAnimationView
 
-[![CI Status](http://img.shields.io/travis/Koji Murata/JellyAnimationView.svg?style=flat)](https://travis-ci.org/Koji Murata/JellyAnimationView)
-[![Version](https://img.shields.io/cocoapods/v/JellyAnimationView.svg?style=flat)](http://cocoapods.org/pods/JellyAnimationView)
-[![License](https://img.shields.io/cocoapods/l/JellyAnimationView.svg?style=flat)](http://cocoapods.org/pods/JellyAnimationView)
 [![Platform](https://img.shields.io/cocoapods/p/JellyAnimationView.svg?style=flat)](http://cocoapods.org/pods/JellyAnimationView)
+![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)
+[![CocoaPods](https://img.shields.io/cocoapods/v/JellyAnimationView.svg?style=flat)](http://cocoapods.org/pods/JellyAnimationView)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![License](https://img.shields.io/github/license/malt03/JellyAnimationView.svg?style=flat)
+
+![ScreenShot](https://github.com/malt03/JellyAnimationView/blob/master/screenshot.gif?raw=true)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-JellyAnimationView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
+### via cocoapods
 ```ruby
 pod 'JellyAnimationView'
+```
+
+### via carthage
+```ruby
+github 'malt03/JellyAnimationView'
 ```
 
 ## Author
