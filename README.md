@@ -21,7 +21,7 @@ pod 'JellyAnimationView'
 
 ### via carthage
 ```ruby
-github 'malt03/JellyAnimationView'
+github "malt03/JellyAnimationView"
 ```
 
 ## Author
