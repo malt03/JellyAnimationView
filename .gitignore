@@ -24,7 +24,7 @@ DerivedData
 .bundle
 
 Carthage/*
-!Carthage/Balblair
+!Carthage/JellyAnimationView
 *.framework.zip
 
 Example/Pods
