@@ -9,13 +9,27 @@ import UIKit
 
 open class JellyAnimationView: UIView, CAAnimationDelegate {
   open func startAnimation() {
+    isAnimating = true
+    immediately = false
     startVerticalAnimation()
+  }
+  
+  open func stopAnimation(immediately: Bool = false) {
+    isAnimating = false
+    self.immediately = immediately
+    if immediately {
+      layer.removeAllAnimations()
+    }
   }
   
   @IBInspectable open var startWhenAwakeFromNib: Bool = true
   @IBInspectable open var duration: Double = 1
   @IBInspectable open var jumpHeight: CGFloat = 20
   @IBInspectable open var initialVelocity: CGFloat = 1
+  
+  open private(set) var isAnimating = false
+  
+  private var immediately = false
   
   private func startJellyWidthAnimation() {
     let animation = CASpringAnimation(keyPath: "transform.scale.x")
@@ -26,6 +40,7 @@ open class JellyAnimationView: UIView, CAAnimationDelegate {
     animation.initialVelocity = jumpHeight * 100 * initialVelocity
     animation.damping = 14
     animation.stiffness = 300
+    animation.isRemovedOnCompletion = true
     layer.add(animation, forKey: nil)
   }
   
@@ -38,6 +53,7 @@ open class JellyAnimationView: UIView, CAAnimationDelegate {
     animation.initialVelocity = jumpHeight * 100 * initialVelocity
     animation.damping = 10
     animation.stiffness = 300
+    animation.isRemovedOnCompletion = true
     layer.add(animation, forKey: nil)
   }
   
@@ -60,13 +76,20 @@ open class JellyAnimationView: UIView, CAAnimationDelegate {
     verticalAnimation.keyTimes = keyTimes
     verticalAnimation.values = values
     verticalAnimation.delegate = self
+    verticalAnimation.isRemovedOnCompletion = true
     
     layer.add(verticalAnimation, forKey: nil)
   }
   
   open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-    startJellyAnimation()
-    startVerticalAnimation()
+    if isAnimating {
+      startJellyAnimation()
+      startVerticalAnimation()
+    } else {
+      if !immediately {
+        startJellyAnimation()
+      }
+    }
   }
   
   override open func awakeFromNib() {

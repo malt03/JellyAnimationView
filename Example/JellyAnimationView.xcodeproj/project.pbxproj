@@ -12,6 +12,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9C44F0C47E14B3ABF68D7D12 /* Pods_JellyAnimationView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B392A0E110C38F48FFA4F7E6 /* Pods_JellyAnimationView_Example.framework */; };
+		ED727A461F739DC70068A182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED727A451F739DC70068A182 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C041CE0516521808A0456310 /* Pods-JellyAnimationView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyAnimationView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JellyAnimationView_Example/Pods-JellyAnimationView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D1D710976E9922E774CE559A /* Pods-JellyAnimationView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyAnimationView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JellyAnimationView_Tests/Pods-JellyAnimationView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB1CD7121E3AC59761741B1A /* Pods-JellyAnimationView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyAnimationView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JellyAnimationView_Tests/Pods-JellyAnimationView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED727A451F739DC70068A182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				ED727A451F739DC70068A182 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED727A461F739DC70068A182 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
