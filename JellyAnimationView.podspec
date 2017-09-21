@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JellyAnimationView'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Animation like jelly.'
 
   s.description      = <<-DESC
