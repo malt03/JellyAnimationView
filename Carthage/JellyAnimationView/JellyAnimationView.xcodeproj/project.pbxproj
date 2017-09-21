@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ED65AA081F73830E00E9F4E1 /* JellyAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED65AA061F73830E00E9F4E1 /* JellyAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED65AA0F1F73832000E9F4E1 /* JellyAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AA0E1F73832000E9F4E1 /* JellyAnimationView.swift */; };
+		ED65AA171F73851800E9F4E1 /* JellyAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AA161F73851800E9F4E1 /* JellyAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED65AA031F73830E00E9F4E1 /* JellyAnimationView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JellyAnimationView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65AA061F73830E00E9F4E1 /* JellyAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JellyAnimationView.h; sourceTree = "<group>"; };
 		ED65AA071F73830E00E9F4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED65AA0E1F73832000E9F4E1 /* JellyAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JellyAnimationView.swift; path = ../../../JellyAnimationView.swift; sourceTree = "<group>"; };
+		ED65AA161F73851800E9F4E1 /* JellyAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JellyAnimationView.swift; path = ../../../JellyAnimationView/Classes/JellyAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				ED65AA061F73830E00E9F4E1 /* JellyAnimationView.h */,
-				ED65AA0E1F73832000E9F4E1 /* JellyAnimationView.swift */,
+				ED65AA161F73851800E9F4E1 /* JellyAnimationView.swift */,
 				ED65AA071F73830E00E9F4E1 /* Info.plist */,
 			);
 			path = JellyAnimationView;
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED65AA0F1F73832000E9F4E1 /* JellyAnimationView.swift in Sources */,
+				ED65AA171F73851800E9F4E1 /* JellyAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
