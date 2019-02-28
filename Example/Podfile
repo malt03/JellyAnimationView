@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'JellyAnimationView_Example' do
   pod 'JellyAnimationView', :path => '../'
-
-  target 'JellyAnimationView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

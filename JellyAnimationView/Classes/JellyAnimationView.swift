@@ -23,6 +23,10 @@ open class JellyAnimationView: UIView, CAAnimationDelegate {
     }
   }
   
+  deinit {
+    print("deiniiiiiiiiiiiiiiiiit")
+  }
+  
   @IBInspectable open var startWhenAwakeFromNib: Bool = true
   @IBInspectable open var duration: Double = 1
   @IBInspectable open var jumpHeight: CGFloat = 20
@@ -83,6 +87,8 @@ open class JellyAnimationView: UIView, CAAnimationDelegate {
   }
   
   open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    if superview == nil { return } // memory leak
+    
     if isAnimating {
       startJellyAnimation()
       startVerticalAnimation()
